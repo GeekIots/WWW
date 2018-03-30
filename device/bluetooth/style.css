@@ -1,0 +1,38 @@
+.contain{
+	padding-left: 5%;
+	padding-top: 1%;
+	background-color: white;
+}
+/*表格样式*/
+table {
+    border-collapse: collapse;
+    width:95%;
+}
+
+table, td, th {
+    border: 1px solid black;
+    height:80px;
+    text-align: center;
+    font-size: 25px;
+}
+/*标题颜色*/
+th
+{
+	background-color:gray;
+	color:black;
+}
+
+input{
+	height: 90%;
+	width: 95%;
+	border-style: none;
+	text-align: center;	
+}
+._button{
+	width:auto;
+	height: auto;
+	font-size: 200%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
