@@ -241,8 +241,19 @@
         view.innerHTML = html;
       });
 
+      //全局变量
+      var busy = false;
+
       //所有的button引起的变化
       $(":button").bind("click",function(){
+        if (busy) {
+          layer_msg("您有其它操作正在执行，请稍后再试！");
+          return;
+        }
+        else{
+         busy = true; 
+        }
+
         var wait;
         var stop=false;
         get_code_time = function (o) { 
@@ -266,16 +277,27 @@
         stop=false;
         get_code_time($("#msg"+id));
           // 发送指令并等待响应
-          $.ajax({
+         var ajaxTimeoutTest = $.ajax({
           async: true,
+          timeout : 5000, //超时时间设置，单位毫秒
           url: "/api/device/device.php?device=switch&type=set&userid="+user.userid+"&id="+id+"&cmd="+cmd,
           success: function (res) {
             console.log('success:',res);
-            stop=true;
+            if (res.return==null) {res.return='绕地球走了一圈，什么也没找到！'}
             $("#msg"+id).text(res.return+' '+$("#msg"+id).text());
             $("#heat"+id).text(parseInt($("#heat"+id).text())+1);
             $("#latest"+id).text(res.latest);
             $("#state"+id).text(cmd);
+            stop=true;
+          },
+          complete:function(XMLHttpRequest,status){
+               if(status=='timeout'){//超时,status还有success,error等值的情况
+         　　　　　 ajaxTimeoutTest.abort();
+        　　　　　  console.log('服务器响应超时！');
+                  $("#msg"+id).text('通信超时！'+' '+$("#msg"+id).text());
+                  stop=true;
+        　　　　}
+            busy = false;//清除忙标志
           },
           error:function (res) {
             console.log('fail:',res);
