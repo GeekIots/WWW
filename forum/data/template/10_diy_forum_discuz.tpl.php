@@ -1,5 +1,5 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); hookscriptoutput('discuz');
-block_get('5');?><?php include template('common/header'); ?><div id="pt" class="bm cl">
+block_get('6');?><?php include template('common/header'); ?><div id="pt" class="bm cl">
 <?php if(empty($gid) && $announcements) { ?>
 <div class="y">
 <div id="an">
@@ -35,17 +35,17 @@ block_get('5');?><?php include template('common/header'); ?><div id="pt" class="
 
 <?php if(empty($gid)) { ?><?php echo adshow("text/wp a_t");?><?php } ?>
 
-<style id="diy_style" type="text/css"></style>
+<style id="diy_style" type="text/css">#portal_block_6 { border:#999999 2px dotted !important;margin:1px !important;}#portal_block_6 .dxb_bc { font-size:18px !important;margin:2px !important;}</style>
 
 <?php if(empty($gid)) { ?>
 <div class="wp">
-<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+<!--[diy=diy1]--><div id="diy1" class="area"><div id="frameyzNxE1" class="frame move-span cl frame-1"><div class="title frame-title" style='background-image:none;background-repeat:repeat;background-color:rgb(0, 255, 204);'><span class="titletext" style="font-size:26px;">ÈÈÌû</span></div><div id="frameyzNxE1_left" class="column frame-1-c"><div id="frameyzNxE1_left_temp" class="move-span temp"></div><?php block_display('6');?></div></div></div><!--[/diy]-->
 </div>
 <?php } ?>
 
 <div id="ct" class="wp cl<?php if($_G['setting']['forumallowside']) { ?> ct2<?php } ?>">
 
-<!--[diy=diy_chart]--><div id="diy_chart" class="area"><div id="framekM33QO" class="frame move-span cl frame-1"><div class="title frame-title"><span class="titletext">¹«¸æÀ¸</span></div><div id="framekM33QO_left" class="column frame-1-c"><div id="framekM33QO_left_temp" class="move-span temp"></div><?php block_display('5');?></div></div></div><!--[/diy]-->
+<!--[diy=diy_chart]--><div id="diy_chart" class="area"></div><!--[/diy]-->
 <div class="mn">
 
 <?php if(!empty($_G['setting']['grid']['showgrid'])) { ?>

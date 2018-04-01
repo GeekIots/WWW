@@ -43,13 +43,13 @@
 
 <!--{if empty($gid)}-->
 <div class="wp">
-	<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+	<!--[diy=diy1]--><div id="diy1" class="area"><div id="framekM33QO" class="frame move-span cl frame-1"><div class="title frame-title"><span class="titletext">公告栏</span></div><div id="framekM33QO_left" class="column frame-1-c"><div id="framekM33QO_left_temp" class="move-span temp"></div><!--{block/5}--></div></div></div><!--[/diy]-->
 </div>
 <!--{/if}-->
 
 <div id="ct" class="wp cl{if $_G['setting']['forumallowside']} ct2{/if}">
 
-	<!--[diy=diy_chart]--><div id="diy_chart" class="area"><div id="framekM33QO" class="frame move-span cl frame-1"><div class="title frame-title"><span class="titletext">公告栏</span></div><div id="framekM33QO_left" class="column frame-1-c"><div id="framekM33QO_left_temp" class="move-span temp"></div><!--{block/5}--></div></div></div><!--[/diy]-->
+	<!--[diy=diy_chart]--><div id="diy_chart" class="area"><div id="frameyzNxE1" class="frame move-span cl frame-1"><div class="title frame-title"><span class="titletext">1框架</span></div><div id="frameyzNxE1_left" class="column frame-1-c"><div id="frameyzNxE1_left_temp" class="move-span temp"></div><!--{block/6}--></div></div></div><!--[/diy]-->
 	<div class="mn">
 
 		<!--{if !empty($_G['setting']['grid']['showgrid'])}-->

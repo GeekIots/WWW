@@ -19,8 +19,8 @@
 </head>
 <body>
   <?php require($_SERVER['DOCUMENT_ROOT'].'/common/header.php'); ?>
-  <div style="padding: 10% 15% 5%;">
-    <form class="form-horizontal">
+  <div>
+    <form style="padding: 10% 15% 5%;" class="form-horizontal">
         <div class="form-group" align="center">
             <img src="/image/default/switch.jpg" id="pic-show" style="width: 150px;height: 150px;border-radius: 10px;" onerror="javascript:this.src='/image/default/error.jpg';">
         </div>

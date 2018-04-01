@@ -19,8 +19,8 @@
 </head>
 <body>
   <?php require($_SERVER['DOCUMENT_ROOT'].'/common/header.php'); ?>
-  <div style="padding: 10% 15% 5%;">
-    <form class="form-horizontal">
+  <div>
+    <form style="padding: 10% 15% 5%;" class="form-horizontal">
         <script id="moduel" type="text/html">
 
         <div class="form-group" align="center">

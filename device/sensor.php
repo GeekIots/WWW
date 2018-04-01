@@ -142,7 +142,7 @@
           {{# } }}
         {{#  }); }}
       </div>
- 
+      
   </script>
   <!-- 建立视图。用于呈现模板渲染结果。 -->
   <div id="view"></div>
@@ -154,7 +154,9 @@
 <script>
   //传感器
   var sensor;
-  
+  function updata(){
+
+  }
   layui.use(['layer','laydate','laypage','laytpl','layedit','form','upload','tree','table','element','util','flow','carousel','code','jquery'], function(){
       var layer,laydate,laypage,laytpl,layim,layedit,form,upload,tree,table,element,util,flow,carousel,code,$,mobile;
       layer = layui.layer;
@@ -221,6 +223,30 @@
       laytpl(getTpl).render(sensor, function(html){
         view.innerHTML = html;
       });
+
+      timename=setInterval(function(){
+          $.ajax({
+          type:'GET',
+          async: false, //同步
+          url: "/api/device/device.php",
+          data:{"device":'sensor',"type":'getlist',"userid":user.userid},
+          success: function (res) {
+            sensor  = res;
+            console.log('sensor:',res);
+            //渲染数据
+            var getTpl = moduel.innerHTML;
+            var view = document.getElementById('view');
+            laytpl(getTpl).render(sensor, function(html){
+              view.innerHTML = html;
+            });
+          },
+          error:function (res) {
+            console.log('fail:',res);
+          }
+        });
+      },1000);
+
+
     } 
   }); 
 </script>
