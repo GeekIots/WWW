@@ -10,7 +10,8 @@
           <a href="javascript:;" class="iconfont">控制台</a>
           <dl class="layui-nav-child">
             <a href="/device/bluetooth/index.php" class="iconfont">配置蓝牙</a>
-            <a href="/device/device.php" class="iconfont">设备控制</a>
+            <a href="/device/device.php" class="iconfont">控制开关</a>
+            <a href="/device/sensor.php" class="iconfont">监控传感器</a>
             <a href="/device/management.php" class="iconfont">设备管理</a>
           </dl>
         </li>

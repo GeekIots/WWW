@@ -54,7 +54,7 @@
 		  </table>
 		  
 		  <div style="text-align: right;padding-top: 30px;">
-		  	<a class="layui-btn" href="device.php"> 控制开关 </a>
+		  	<a class="layui-btn" href="device.php"> 控制 </a>
 		  	<a class="layui-btn" href="add.switch.php"> 添加开关 </a>
 			<a class="layui-btn layui-btn-normal" href="/index.php">首页</a>
 		  </div>
@@ -89,6 +89,7 @@
 		    </tbody>
 		</table>
 		 <div style="text-align: right;padding-top: 30px;">
+        <a class="layui-btn" href="sensor.php"> 监控 </a>
 		  	<a class="layui-btn" href="add.sensor.php">添加传感器</a>
 			<a class="layui-btn layui-btn-normal" href="/index.php">首页</a>
 		  </div>
