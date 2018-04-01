@@ -94,8 +94,7 @@
             <div class="col-md-5 dev_title">
                <div class="row dev_title_color" style="">
                 <h4 style="float: left;">控制设备</h4> 
-                <h4 style="float: right;margin-right: 10px;" id="msg{{item.id}}"></h4> 
-               </div>
+                <h4 style="float: right;margin-right: 10px;" id="msg{{item.id}}"></h4>               </div>
                <div class="row dev_border_Top" >
                   <div class="col-md-4">
                      <button type="button" id="{{item.id}}" name="{{item.opencmd}}" class="dev_button btn btn-default">打开</button>
@@ -168,6 +167,7 @@
   </script>
   <!-- 建立视图。用于呈现模板渲染结果。 -->
   <div id="view"></div>
+  <div style="padding-top: 20px"></div>
   <?php include($_SERVER['DOCUMENT_ROOT'].'/common/footer.php') ?>
 </body>
 </html> 

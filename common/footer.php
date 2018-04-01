@@ -1,7 +1,7 @@
 
 <div class="footer" style="position:absolute;bottom:0px;width: 100%;padding-top: 10px;">
   <p>
-    &copy;2017 <a href="/blog/index.php">极客社区</a>  <a href="/index.php">geek-iot.com</a>
+    &copy;2017 <a href="/forum" target="_blank">极客社区</a>  <a href="/index.php">geek-iot.com</a>
   </p>
   <p>
   	<a href="mailto:sunyiming537@126.com" target="_blank">联系邮箱</a>
