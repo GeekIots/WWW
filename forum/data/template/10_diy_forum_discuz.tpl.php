@@ -35,7 +35,7 @@ block_get('6');?><?php include template('common/header'); ?><div id="pt" class="
 
 <?php if(empty($gid)) { ?><?php echo adshow("text/wp a_t");?><?php } ?>
 
-<style id="diy_style" type="text/css">#portal_block_6 { border:#999999 2px dotted !important;margin:1px !important;}#portal_block_6 .dxb_bc { font-size:18px !important;margin:2px !important;}</style>
+<style id="diy_style" type="text/css">#portal_block_6 {  border:#999999 2px dotted !important;margin:1px !important;}#portal_block_6 .dxb_bc {  font-size:18px !important;margin:2px !important;}</style>
 
 <?php if(empty($gid)) { ?>
 <div class="wp">

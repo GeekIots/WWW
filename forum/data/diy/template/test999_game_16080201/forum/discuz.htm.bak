@@ -39,17 +39,17 @@
 <!--{ad/text/wp a_t}-->
 <!--{/if}-->
 
-<style id="diy_style" type="text/css"></style>
+<style id="diy_style" type="text/css">#portal_block_6 { border:#999999 2px dotted !important;margin:1px !important;}#portal_block_6 .dxb_bc { font-size:18px !important;margin:2px !important;}</style>
 
 <!--{if empty($gid)}-->
 <div class="wp">
-	<!--[diy=diy1]--><div id="diy1" class="area"><div id="framekM33QO" class="frame move-span cl frame-1"><div class="title frame-title"><span class="titletext">¹«¸æÀ¸</span></div><div id="framekM33QO_left" class="column frame-1-c"><div id="framekM33QO_left_temp" class="move-span temp"></div><!--{block/5}--></div></div></div><!--[/diy]-->
+	<!--[diy=diy1]--><div id="diy1" class="area"><div id="frameyzNxE1" class="frame move-span cl frame-1"><div class="title frame-title" style='background-image:none;background-repeat:repeat;background-color:rgb(0, 255, 204);'><span class="titletext" style="font-size:26px;">ÈÈÌû</span></div><div id="frameyzNxE1_left" class="column frame-1-c"><div id="frameyzNxE1_left_temp" class="move-span temp"></div><!--{block/6}--></div></div></div><!--[/diy]-->
 </div>
 <!--{/if}-->
 
 <div id="ct" class="wp cl{if $_G['setting']['forumallowside']} ct2{/if}">
 
-	<!--[diy=diy_chart]--><div id="diy_chart" class="area"><div id="frameyzNxE1" class="frame move-span cl frame-1"><div class="title frame-title"><span class="titletext">1¿ò¼Ü</span></div><div id="frameyzNxE1_left" class="column frame-1-c"><div id="frameyzNxE1_left_temp" class="move-span temp"></div><!--{block/6}--></div></div></div><!--[/diy]-->
+	<!--[diy=diy_chart]--><div id="diy_chart" class="area"></div><!--[/diy]-->
 	<div class="mn">
 
 		<!--{if !empty($_G['setting']['grid']['showgrid'])}-->
