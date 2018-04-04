@@ -13,39 +13,41 @@
   <script src="/common/fun.js"></script>
 </head>
 <style type="text/css">
-	 * { padding: 0; margin: 0; }
+	 * { padding: 0; margin: 0; background-color: #393D49;}
         .main {
-             
-            background-color: #fff;
-            width: 100%;
-            padding-bottom: 100%;
-            padding-left: 0.5%;
-    	　　 padding-top: 0.5%;
+            margin-top:30%;
+            margin-left:10%;
         }
-        .main>div {
-            width: 31%;
-            padding-bottom: 31%;
+        .box {
+            width: 40%;
+            height: 40%;
             border: 1% solid #fff;         
-            background-color: mediumpurple;
+            background-color:#009688;
             border-radius: 3%;
             float: left;
-            margin: 1%;
-        }        
+            margin: 1.5%;
+            box-shadow:0px 0px  10px 2px #c2c2c2;
+        }      
+        a{
+            color: white;
+            text-align: center;
+            line-height: 380px;
+            margin: 20%;
+            font-size: 80px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px #393D49, 1px 1px 2px #393D49, 1px 1px 6px #393D49;
+        }  
+        a:hover{
+          color: orange;
+        }
 </style>
 <body>
 	
   	 <div class="main">
-        <div class="box1">
-          <a href="test">测试页面</a>
-        </div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-        <div class="box4"></div>
-        <div class="box5"></div>
-        <div class="box6"></div>
-        <div class="box7"></div>
-        <div class="box8"></div>
-        <div class="box9"></div>
+          <a class="box" href="device/switch.html">开关</a>
+          <a class="box" href="test">温度</a>
+          <a class="box" href="test">湿度</a>
+          <a class="box" href="test">位置</a>
     </div>
 </body>
 <script>
